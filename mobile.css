@@ -1,0 +1,220 @@
+#cover_img {
+  width: 100%;
+  height: 750px;
+  background: url('../images/dylan.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+
+p {
+  margin-top: 20px;
+  font-family: Georgia;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+/*-- Copy from desktop css --*/
+
+@media (min-width: 800px) {
+.row {
+  height:700px;
+}
+
+.good {
+  padding-right: 30px;
+  text-align: right;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+  background-color: blue;
+}
+
+.saying {
+  position: relative;
+  height: 150px;
+  width: 300px;
+  background-color: transparent;
+  margin: auto;
+  z-index: 3;
+  top: -390px;
+   -ms-transform: rotate(-11deg); /* IE 9 */
+    -webkit-transform: rotate(-11deg); /* Safari */
+    transform: rotate(-11deg);
+
+  text-align: center;
+
+
+  }
+
+  #exit {
+    background: url('../images/Fortune_objects-04.svg') no-repeat center;
+    width: 100%;
+    height: 20px;
+    position: relative;
+
+  }
+
+  .explanation {
+    position: relative;
+    opacity: 0.85;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    top: -650px;
+    z-index: 4;
+
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+  }
+
+.lefty {
+  width: 100%;
+  height:247px;
+  background-position: left bottom;
+  background: url('../images/Fortune_objects-01.svg') no-repeat center;
+  position: relative;
+  top: -56px;
+  left: -325px;
+  z-index: 1;
+  }
+
+
+  .center {
+  width: 100%;
+  height:247px;
+  background: url('../images/Fortune_objects-02.svg') no-repeat center;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+  }
+
+  .righty {
+  width: 100%;
+  height:247px;
+  float: bottom;
+  background: url('../images/Fortune_objects-03.svg') no-repeat center;
+  position: relative;
+  top: 53px;
+  right: -314px;
+  z-index: 1;
+  }
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px; /* max width of content */
+  max-height: 800px;
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box; 
+  }
+
+  .column,
+  .columns {
+    margin-left: 1%; /* column gutter */
+    float: left;
+    height: 800px;
+    background-color: red;
+    box-sizing: border-box;
+    } 
+
+   
+/* ----------------- Start Grid for mobile screens ----------------- */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* max width of content */
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* ----------------- End Grid for mobile screens ----------------- */
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .column,
+  .columns {
+    width: 48%;
+    margin-left: 4%; /* column gutter */
+    float: left;
+    box-sizing: border-box;
+  }
+
+.column,.columns:nth-of-type(odd) {
+  margin-left: 0;
+}
+
+.boring {
+  background: url('../images/dylan_2.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+}
+
+@media (min-width: 750px) {
+/* ----------------- Start Grid for desktop screens ----------------- */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px; /* max width of content */
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+  .column,
+  .columns {
+    margin-left: 4%; /* column gutter */
+    float: left;
+    box-sizing: border-box;
+    }    
+  
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; } /* prevents first column from acquiring a gutter on its left: typography 101 */
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+}
+/* ----------------- End Grid for desktop screens ----------------- */
+
+
+
+/* ----------------- Misc Grid Commands ----------------- */
+
+/* Self Clearing Goodness: Fixes Issues with Float: Left; */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
